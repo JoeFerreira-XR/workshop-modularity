@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(MovementComponent))]
+[RequireComponent(typeof(EC_Movement))]
 public class CameraBehaviour : MonoBehaviour
 {
     #region Dependencies
-    private MovementComponent movementComponent;
+    private EC_Movement movementComponent;
     #endregion
     
     public Transform target;
@@ -14,7 +14,7 @@ public class CameraBehaviour : MonoBehaviour
 
     private void Awake()
     {
-        movementComponent = GetComponent<MovementComponent>();
+        movementComponent = GetComponent<EC_Movement>();
     }
 
     void Update()
