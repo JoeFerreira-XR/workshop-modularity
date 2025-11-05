@@ -8,7 +8,7 @@ public class PlayerBehaviour : MonoBehaviour
     #region Dependencies
     private MovementComponent movementComponent;
     #endregion
-    
+
     [SerializeField] private float speed;
 
     private void Awake()
@@ -23,17 +23,6 @@ public class PlayerBehaviour : MonoBehaviour
 
     void Update()
     {
-        Move(MovementDirection, speed);
-    }
-
-    /// <summary>
-    /// Move the player in a direction
-    /// </summary>
-    /// <param name="direction">x = horizontal, y = vertical</param>
-    /// <param name="speed">speed of the player</param>
-    void Move(Vector2 direction, float speed)
-    {
-        Vector3 direction3 = new(direction.x, 0, direction.y);
-        transform.Translate(speed * Time.deltaTime * direction3);
+        movementComponent.MoveToDirection(MovementDirection, speed);
     }
 }

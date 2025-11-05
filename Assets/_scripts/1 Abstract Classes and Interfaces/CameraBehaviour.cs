@@ -19,11 +19,6 @@ public class CameraBehaviour : MonoBehaviour
 
     void Update()
     {
-        LerpToTarget();
-    }
-
-    void LerpToTarget()
-    {
-        transform.position = Vector3.Lerp(transform.position, target.position, lerpSpeed);
+        movementComponent.LerpToTarget(target, lerpSpeed);
     }
 }
