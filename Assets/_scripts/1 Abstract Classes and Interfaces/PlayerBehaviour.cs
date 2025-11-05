@@ -4,19 +4,11 @@ using UnityEngine;
 
 public class PlayerBehaviour : MonoBehaviour
 {
-    #region Debug stuff
-    [Range(-1, 1)]
-    public float horizontal;
-    [Range(-1, 1)]
-    public float vertical;
-    [Min(0)]
-    public float speed;
-
+    [SerializeField] private float speed;
     Vector2 MovementDirection
     {
-        get => new(horizontal, vertical);
+        get => new(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
     }
-    #endregion
 
     void Update()
     {
