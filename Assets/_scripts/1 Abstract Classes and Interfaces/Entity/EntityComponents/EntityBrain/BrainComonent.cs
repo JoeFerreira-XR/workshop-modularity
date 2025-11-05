@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EC_Brain : AEntityComponent
+public class BrainComponent : EntityComponentBase
 {
-    public List<AEntityAction> updateActions;
+    public List<EntityActionBase> updateActions;
 
     private void Update()
     {

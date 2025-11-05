@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EC_Movement : AEntityComponent
+public class MovementComponent : EntityComponentBase
 {
     #region Movement Types
     /// <summary>

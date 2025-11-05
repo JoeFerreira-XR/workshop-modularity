@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class AEntityComponent : MonoBehaviour, IEntityComponent
+public abstract class EntityComponentBase : MonoBehaviour, IEntityComponent
 {
     public Entity Entity { get; private set; }
 

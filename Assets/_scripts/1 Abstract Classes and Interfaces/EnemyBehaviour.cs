@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(EC_Movement))]
+[RequireComponent(typeof(MovementComponent))]
 public class EnemyBehaviour : MonoBehaviour
 {
     #region Dependencies
-    private EC_Movement movementComponent;
+    private MovementComponent movementComponent;
     #endregion
     
     public Transform target;
@@ -14,7 +14,7 @@ public class EnemyBehaviour : MonoBehaviour
 
     private void Awake()
     {
-        movementComponent = GetComponent<EC_Movement>();
+        movementComponent = GetComponent<MovementComponent>();
     }
 
     void Update()
