@@ -5,7 +5,7 @@ using System;
 
 public class Entity : MonoBehaviour
 {
-    #region Dependencies
+    #region Components
     private Dictionary<Type, IEntityComponent> components;
 
     private void GetAllComponents()
@@ -38,6 +38,11 @@ public class Entity : MonoBehaviour
 
         return (T)component;
     }
+    #endregion
+
+    #region Context
+    public Transform movementTarget;
+    public Vector2 movementDirection;
     #endregion
 
     void Awake()
