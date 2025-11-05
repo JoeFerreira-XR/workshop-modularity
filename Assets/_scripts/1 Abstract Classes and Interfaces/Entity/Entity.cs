@@ -40,13 +40,6 @@ public class Entity : MonoBehaviour
     }
     #endregion
 
-    #region Context
-    public float lerpSpeed;
-    public float moveSpeed;
-    public Transform movementTarget;
-    public Vector2 movementDirection;
-    #endregion
-
     void Awake()
     {
         GetAllComponents();
