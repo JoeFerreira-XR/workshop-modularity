@@ -2,11 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EntityBrain : AEntityComponent
+public class EC_Brain : AEntityComponent
 {
     public List<AEntityAction> updateActions;
-
-    public Transform movementTarget;
 
     private void Update()
     {
