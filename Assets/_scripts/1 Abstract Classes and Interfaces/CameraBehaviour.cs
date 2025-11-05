@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class CameraBehaviour : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Transform target;
+    public float lerpSpeed = 0.125f;
 
-    // Update is called once per frame
     void Update()
     {
-        
+        LerpToTarget();
+    }
+
+    void LerpToTarget()
+    {
+        transform.position = Vector3.Lerp(transform.position, target.position, lerpSpeed);
     }
 }
