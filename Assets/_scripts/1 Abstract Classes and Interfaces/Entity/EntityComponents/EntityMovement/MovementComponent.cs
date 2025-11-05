@@ -2,8 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MovementComponent : MonoBehaviour
+public class MovementComponent : EntityComponentBase
 {
+    #region Context
+    public float lerpSpeed;
+    public float moveSpeed;
+    public Transform movementTarget;
+    public Vector2 movementDirection;
+    #endregion
+
     #region Movement Types
     /// <summary>
     /// Move the player in a direction
