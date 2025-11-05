@@ -131,6 +131,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 274717891}
+  - component: {fileID: 274717894}
+  - component: {fileID: 274717893}
+  - component: {fileID: 274717892}
   m_Layer: 0
   m_Name: CameraDirector
   m_TagString: Untagged
@@ -154,6 +157,48 @@ Transform:
   - {fileID: 963194228}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &274717892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274717889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea99d91045e491042b991d69462602ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lerpSpeed: 0.01
+  moveSpeed: 0
+  movementTarget: {fileID: 1092520179}
+  movementDirection: {x: 0, y: 0}
+--- !u!114 &274717893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274717889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b5b5e77836a048448e7dabd8ceb48ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  updateActions:
+  - {fileID: 11400000, guid: 42506ebf55f67804fbc8a5e54c144b60, type: 2}
+--- !u!114 &274717894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274717889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bc471c9380f6584b960988392cdfcd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -388,8 +433,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lerpSpeed: 0
-  moveSpeed: 0
-  movementTarget: {fileID: 0}
+  moveSpeed: 1
+  movementTarget: {fileID: 1092520179}
   movementDirection: {x: 0, y: 0}
 --- !u!114 &981832590
 MonoBehaviour:
@@ -417,10 +462,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bc471c9380f6584b960988392cdfcd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lerpSpeed: 1
-  moveSpeed: 1
-  movementTarget: {fileID: 1092520179}
-  movementDirection: {x: 0, y: 0}
 --- !u!1 &1092520177
 GameObject:
   m_ObjectHideFlags: 0
